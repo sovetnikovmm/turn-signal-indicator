@@ -1,0 +1,17 @@
+Designator,Value,Description,Quantity,Package,Manufacter,Part Number
+
+"R1","15k O","Carbon film resistor ±5%, 0.25 W","1","CF-25","Yageo","CF-1/4W-15KJ"
+"R2, R6","2.7k O","Carbon film resistor ±5%, 0.25 W","2","CF-25","Yageo","CF-1/4W-2K7J"
+"R3","470k O","Carbon film resistor ±5%, 0.25 W","1","CF-25","Yageo","CF-1/4W-470KJ"
+"R4","22k O","Carbon film resistor ±5%, 0.25 W","1","CF-25","Yageo","CF-1/4W-22KJ"
+"R5","8.2k O","Carbon film resistor ±5%, 0.25 W","1","CF-25","Yageo","CF-1/4W-8K2J"
+"R7","3k O","Carbon film resistor ±5%, 0.25 W","1","CF-25","Yageo","CF-1/4W-3KJ"
+"XP1","KLS 2Pin 5.0mm","2-pin connector (plug)","1","THT","KLS electronic Co Ltd","L-KLS2-300-5.00-02P-2S"
+"XS1","KLS 2Pin 5.0mm","2-pin connector (socket)","1","THT","KLS electronic Co Ltd","L-KLS2-300-5.00-02P-2S"
+"C1","0,15uF","Non-polarized capacitor 40V 20%","1","MLCC","JB Capacitors","JYM1H154KBX010000B"
+"C2","1000pF","Non-polarized capacitor 160V 10%","1","MLCC","JB Capacitors","JYM1H102JBN010000B"
+"C3","3.3uF","Polarized capacitor 50V 20%","1","ECAP","JB Capacitors","JRB1H3R3M02000500110000B"
+"VD1","KD102A","Silicon Diode ","1","KD-30","GOST","KD102A"
+"VD2","KD103A","Silicon Diode ","1","KD-30","GOST","KD103A"
+"VT1, VT4","KT361B","PNP bipolar junction transistor","2","KT-13","GOST","KT361B"
+"VT2, VT3","KT315B","NPN bipolar junction transistor","2","KT-13","GOST","KT315B"

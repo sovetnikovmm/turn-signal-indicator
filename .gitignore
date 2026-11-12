@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Altium Designer - generated directories
+History/
+__Previews/
+Project Logs for */
+Project Outputs for */
+
+# Altium Designer - local and temporary files
+*.PrjPcbStructure
+*.PrjPcb.user
+*.PrjPcb.user.*
+*.SchDocPreview
+*.PcbDocPreview
+*.tmp
+*.bak
+*~
+
+# Generated Altium outputs
+hardware/outputs/
