@@ -22,7 +22,11 @@ validation are not documented here.
 The original [structural diagram (E1)](docs/original-ru/turn-signal-indicator_E1_block-diagram.PDF)
 is available in Russian.
 
-## Schematic
+## Schematic (E3)
+
+[![Circuit schematic E3](hardware/images/e3-schematic.png)](docs/original-ru/turn-signal-indicator_E3_schematic.PDF)
+
+Click the schematic preview to open the full-size original PDF drawing.
 
 The circuit uses four bipolar transistors (VT1–VT4), two diodes (VD1–VD2), seven resistors,
 and three capacitors. It is implemented entirely with discrete components, without a
@@ -30,9 +34,6 @@ microcontroller.
 
 - [Circuit schematic (E3, PDF)](docs/original-ru/turn-signal-indicator_E3_schematic.PDF)
 - [Editable schematic (Altium SchDoc)](hardware/altium/turn-signal-indicator_E3_schematic.SchDoc)
-
-The PDF is the original Russian-language ESKD drawing; the editable Altium file is the
-source for further changes.
 
 ## PCB
 
@@ -53,37 +54,52 @@ The board layout and mechanical details are available in the
 
 The speaker is external to the PCB and connects across XP1 pins 1 and 2.
 
-## Known issues / documentation notes
+## Bill of materials (based on the original PE3)
 
-- **Connector designation.** The original parts list (PE3) identifies the two connectors as
-  XS1 and **XS2**, while the updated Altium design uses **XS1** and **XP1**. The original PE3
-  should be revised to match the current schematic before issuing a new documentation set.
-- **Validation status.** The PCB design and manufacturing exports are provided, but no
-  assembly photographs, bench measurements, or functional test report are included. These
-  files should not be taken as evidence of a tested production design.
+### Capacitors
 
-## Bill of materials
+| Ref | Qty | Original PE3 entry |
+| --- | ---: | --- |
+| C1 | 1 | К10-17Б 0,15 мкФ 40В 20% (ЮЖО.460.172 ТУ) |
+| C2 | 1 | КМ5Б 1000пФ 160В 10% (ЮЖО.460.161 ТУ) |
+| C3 | 1 | JRB1H3R3M02000500110000B (JB Capacitors, Тайвань) |
 
-| Ref | Qty | Part | Description |
-| --- | ---: | --- | --- |
-| C1 | 1 | К10-17Б | 150 nF, 40 V, ±20% |
-| C2 | 1 | КМ5Б | 1 nF, 160 V, ±10% |
-| C3 | 1 | JRB1H3R3M02000500110000B (JB Capacitors) | Polarized capacitor; 3.3 µF in the exported BOM |
-| R1 | 1 | CF-25 (Yageo) | 15 kΩ, 0.25 W, ±5% |
-| R2, R6 | 2 | CF-25 (Yageo) | 2.7 kΩ, 0.25 W, ±5% |
-| R3 | 1 | CF-25 (Yageo) | 470 kΩ, 0.25 W, ±5% |
-| R4 | 1 | CF-25 (Yageo) | 22 kΩ, 0.25 W, ±5% |
-| R5 | 1 | CF-25 (Yageo) | 8.2 kΩ, 0.25 W, ±5% |
-| R7 | 1 | CF-25 (Yageo) | 3 kΩ, 0.25 W, ±5% |
-| VD1 | 1 | КД102А | Diode |
-| VD2 | 1 | КД103А | Diode |
-| VT1, VT4 | 2 | КТ361Б | PNP bipolar transistor |
-| VT2, VT3 | 2 | КТ315Б | NPN bipolar transistor |
-| XS1 | 1 | KLS2-300-5.00-02P-2S (KLS Electronic) | 2-pin connector, 5.00 mm pitch |
-| XP1 | 1 | KLS2-300-5.00-02P-2S (KLS Electronic) | 2-pin connector, 5.00 mm pitch |
+### Resistors
 
-**Total:** 18 components across 15 BOM lines. See the
-[full BOM (CSV)](docs/turn-signal-indicator.csv) and the
+| Ref | Qty | Original PE3 entry |
+| --- | ---: | --- |
+| R1 | 1 | CF-25 15кОм 0,25Вт 5% (Yageo, Тайвань) |
+| R2, R6 | 2 | CF-25 2,7кОм 0,25Вт 5% (Yageo, Тайвань) |
+| R3 | 1 | CF-25 470кОм 0,25Вт 5% (Yageo, Тайвань) |
+| R4 | 1 | CF-25 22кОм 0,25Вт 5% (Yageo, Тайвань) |
+| R5 | 1 | CF-25 8,2кОм 0,25Вт 5% (Yageo, Тайвань) |
+| R7 | 1 | CF-25 3кОм 0,25Вт 5% (Yageo, Тайвань) |
+
+### Diodes
+
+| Ref | Qty | Original PE3 entry |
+| --- | ---: | --- |
+| VD1 | 1 | КД102А (ГГ3.362.083 ТУ) |
+| VD2 | 1 | КД103А (ГГ3.362.082 ТУ) |
+
+### Transistors
+
+| Ref | Qty | Original PE3 entry |
+| --- | ---: | --- |
+| VT1, VT4 | 2 | КТ361Б (ФЫЮ.336.201 ТУ) |
+| VT2, VT3 | 2 | КТ315Б (ИЖК3.365.200 ТУ) |
+
+### Connectors
+
+| Ref | Qty | Original PE3 entry |
+| --- | ---: | --- |
+| XS1, XS2 | 2 | KLS2-300-5.00-02P-2S (KLS electronic co ltd, Китай) |
+
+**Note.** The original PE3 uses connector designators **XS1** and **XS2**, while the updated
+Altium project uses **XS1** and **XP1**. This README preserves the original PE3 wording in the BOM,
+but the active design files use XP1 for the speaker output connector.
+
+See the [full BOM (CSV)](docs/turn-signal-indicator.csv) and the
 [original parts list (PE3, PDF)](docs/original-ru/turn-signal-indicator_PE3_parts-list.pdf).
 
 ## Engineering documentation
