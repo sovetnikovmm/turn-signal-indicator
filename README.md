@@ -12,13 +12,13 @@ A compact, discrete-transistor audible indicator for a vehicle turn-signal circu
 
 ## Block Diagram
 
-![Block diagram](hardware/images/block-diagram.svg)
+![Block diagram](hardware/images/block-diagram.png)
 
 Power enters through the input connector and reverse-polarity protection diode VD1. Transistors VT1 and VT2 form an asymmetric multivibrator. Its timing networks generate the tone. Transistors VT3 and VT4 form a push-pull output stage that drives the external loudspeaker through coupling capacitor C3. When the vehicle flasher interrupts the supply, the tone follows its flashing rhythm.
 
 ## Schematic
 
-![Circuit schematic](hardware/images/schematic.svg)
+![Circuit schematic](hardware/images/schematic.png)
 
 The circuit is built from discrete components. VD1 protects the input from reversed polarity. VT1 and VT2 generate oscillation, with C1/R3 and C2/R4 setting the timing. The oscillator output controls the complementary transistor output stage. Connector XP1 connects the loudspeaker.
 
